@@ -463,7 +463,7 @@ const [companyupdated, setCompanyupdated] = useState({
        <tbody>
          <tr className="focus:outline-none h-16 border border-[#e4e6e6] bg-[#fafafa] rounded">
          <th className="text-center p-3 px-5 max-sm:p-1"> الاسم</th>
-         <th className="text-center p-3 px-5 max-sm:p-1">المجال الوظيفي </th>
+         <th className="text-center p-3 px-5 max-sm:p-1">المسمى الوظيفي </th>
          <th className="text-center p-3 px-5 max-sm:p-1">السيرة الذاتية </th>
          <th className="text-center p-3 px-5 max-sm:p-1">الحالة </th>
          <th className="text-center p-3 px-5 max-sm:p-1 ">حذف </th>
@@ -548,6 +548,102 @@ const [companyupdated, setCompanyupdated] = useState({
           <th className="text-center p-3 px-5 max-sm:p-1">السيرة الذاتية </th>
           <th className="text-center p-3 px-5 max-sm:p-1">الحالة </th>
         </tr>
+           <tr tabindex="0" className="focus:outline-none h-16 border border-[#e4e6e6] rounded ">
+               <td className="p-3 px-5 max-sm:p-1">
+                   <div className="flex flex-wrap justify-center overflow-y-auto h-6 custom-scrollbar max-sm:h-10">
+                       <p className="text-base font-medium max-sm:text-center max-sm:text-xs leading-none text-gray-700 w-[8ch] text-center break-words max-sm:w-[10ch]">   نوره محمد  </p>
+                   </div>
+               </td>
+               <td className="p-3 px-5 max-sm:p-1">
+                   <div className="flex flex-wrap justify-center overflow-y-auto h-6 custom-scrollbar max-sm:h-10">
+                       <p className="text-base font-medium max-sm:text-center max-sm:text-xs leading-none text-gray-700 w-[15ch] text-center break-words max-sm:w-[10ch]"> معسكر جافاسكربت  </p>
+                   </div>
+               </td>
+               <td className="p-3 px-5 max-sm:p-1">
+                <div className="flex flex-wrap justify-center overflow-y-auto h-6 custom-scrollbar max-sm:h-10">
+                  <p className="text-base font-medium max-sm:text-center max-sm:text-xs leading-none text-gray-700 w-[20ch] text-center break-words max-sm:w-[10ch]">
+                    Nora1998@hotmail.com
+                  </p>
+                </div>
+              </td>
+
+               <td className="pb-2 px-5 max-sm:p-1 ">
+                   <div className="flex flex-wrap justify-center">
+                       <p className="text-base px-4 bg-[#7ed191] py-1  rounded-md text-white font-medium leading-none  mr-2 max-sm:w-10 max-sm:text-[0.7rem] max-sm:px-0.5 max-sm:font-bold">  مكتمل</p>
+                   </div>
+               </td> 
+
+               {/* <td className="">
+                   <div className="flex items-center pl-5">
+                       <img src={deleteStudent}> </img>
+                   </div>
+               </td>  */}
+           </tr>
+
+           <tr tabindex="0" className="focus:outline-none h-16 border border-[#e4e6e6] rounded ">
+               <td className="p-3 px-5 max-sm:p-1">
+                   <div className="flex flex-wrap justify-center overflow-y-auto h-6 custom-scrollbar max-sm:h-10">
+                       <p className="text-base font-medium max-sm:text-center max-sm:text-xs leading-none text-gray-700 w-[8ch] text-center break-words max-sm:w-[10ch]">   نوره محمد  </p>
+                   </div>
+               </td>
+               <td className="p-3 px-5 max-sm:p-1">
+                   <div className="flex flex-wrap justify-center overflow-y-auto h-6 custom-scrollbar max-sm:h-10">
+                       <p className="text-base font-medium max-sm:text-center max-sm:text-xs leading-none text-gray-700 w-[15ch] text-center break-words max-sm:w-[10ch]"> معسكر جافاسكربت  </p>
+                   </div>
+               </td>
+               <td className="p-3 px-5 max-sm:p-1">
+                <div className="flex flex-wrap justify-center overflow-y-auto h-6 custom-scrollbar max-sm:h-10">
+                  <p className="text-base font-medium max-sm:text-center max-sm:text-xs leading-none text-gray-700 w-[20ch] text-center break-words max-sm:w-[10ch]">
+                    Nora1998@hotmail.com
+                  </p>
+                </div>
+              </td>
+
+               <td className="pb-2 px-5 max-sm:p-1 ">
+                   <div className="flex flex-wrap justify-center">
+                       <p className="text-base px-4 bg-[#7ed191] py-1  rounded-md text-white font-medium leading-none  mr-2 max-sm:w-10 max-sm:text-[0.7rem] max-sm:px-0.5 max-sm:font-bold">  مكتمل</p>
+                   </div>
+               </td> 
+
+               {/* <td className="">
+                   <div className="flex items-center pl-5">
+                       <img src={deleteStudent}> </img>
+                   </div>
+               </td>  */}
+           </tr>
+
+           <tr tabindex="0" className="focus:outline-none h-16 border border-[#e4e6e6] rounded ">
+               <td className="p-3 px-5 max-sm:p-1">
+                   <div className="flex flex-wrap justify-center overflow-y-auto h-6 custom-scrollbar max-sm:h-10">
+                       <p className="text-base font-medium max-sm:text-center max-sm:text-xs leading-none text-gray-700 w-[8ch] text-center break-words max-sm:w-[10ch]">   نوره محمد  </p>
+                   </div>
+               </td>
+               <td className="p-3 px-5 max-sm:p-1">
+                   <div className="flex flex-wrap justify-center overflow-y-auto h-6 custom-scrollbar max-sm:h-10">
+                       <p className="text-base font-medium max-sm:text-center max-sm:text-xs leading-none text-gray-700 w-[15ch] text-center break-words max-sm:w-[10ch]"> معسكر جافاسكربت  </p>
+                   </div>
+               </td>
+               <td className="p-3 px-5 max-sm:p-1">
+                <div className="flex flex-wrap justify-center overflow-y-auto h-6 custom-scrollbar max-sm:h-10">
+                  <p className="text-base font-medium max-sm:text-center max-sm:text-xs leading-none text-gray-700 w-[20ch] text-center break-words max-sm:w-[10ch]">
+                    Nora1998@hotmail.com
+                  </p>
+                </div>
+              </td>
+
+               <td className="pb-2 px-5 max-sm:p-1 ">
+                   <div className="flex flex-wrap justify-center">
+                       <p className="text-base px-4 bg-[#7ed191] py-1  rounded-md text-white font-medium leading-none  mr-2 max-sm:w-10 max-sm:text-[0.7rem] max-sm:px-0.5 max-sm:font-bold">  مكتمل</p>
+                   </div>
+               </td> 
+
+               {/* <td className="">
+                   <div className="flex items-center pl-5">
+                       <img src={deleteStudent}> </img>
+                   </div>
+               </td>  */}
+           </tr>
+
            <tr tabindex="0" className="focus:outline-none h-16 border border-[#e4e6e6] rounded ">
                <td className="p-3 px-5 max-sm:p-1">
                    <div className="flex flex-wrap justify-center overflow-y-auto h-6 custom-scrollbar max-sm:h-10">
@@ -714,8 +810,7 @@ const [companyupdated, setCompanyupdated] = useState({
         </div>
         <div className="modal-action">
           <form method="dialog">
-            {/* if there is a button in form, it will close the modal */}
-            <button className="btn">عودة</button>
+          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
           </form>
         </div>
       </div>
