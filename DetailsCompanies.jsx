@@ -207,7 +207,14 @@ const DetailsCompanies = () => {
                                     <h3 className="font-bold text-lg">هل انت متأكد من التقديم؟</h3>
                                     <div className="modal-action">
                                     <form method="dialog" className='flex justify-center items-center gap-2 w-full '>
-                                        <button onClick={()=>document.getElementById('my_modal_2').showModal()} className="rounded-lg bg-[#7ed191] text-white hover:bg-[#94e6a7] w-[5vw] h-[6vh] max-sm:w-[12vw] max-sm:h-[4vh]">نعم</button>
+                                        <button onClick={() => {
+                                            const modal = document.getElementById('my_modal_2');
+                                            modal.showModal();
+
+                                            setTimeout(() => {
+                                                modal.close();
+                                            }, 2000);
+                                            }} className="rounded-lg bg-[#7ed191] text-white hover:bg-[#94e6a7] w-[5vw] h-[6vh] max-sm:w-[12vw] max-sm:h-[4vh]">نعم</button>
                                         <dialog id="my_modal_2" className="modal modal-bottom sm:modal-middle ">
                                             <div className="modal-box">
                                             <div className='flex flex-col justify-center items-center gap-4'>
@@ -218,7 +225,7 @@ const DetailsCompanies = () => {
                                             </div>
                                             <div className="modal-action">
                                             <form method="dialog">
-                                            <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                            {/* <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button> */}
                                             </form>
                                             </div>
                                         </div>
