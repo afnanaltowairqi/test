@@ -132,11 +132,36 @@ const Nav = () => {
         
         )}
 
-{getLocal !== null  && (
-    <li onClick={removeLocal} className="rounded-lg flex items-center cursor-pointer text-[1.2rem] text-[#6e68c4] hover:text-[#f39e4e] py-1 px-3 ml-4 ">
-      <RiLogoutCircleLine fill='#6e68c4' size={27} className='mb-1 cursor-pointer' />
-    </li>
-  )}
+{getLocal !== null && (
+  <li
+    onClick={() => document.getElementById('my_modal_1').showModal()}
+    className="rounded-lg flex items-center cursor-pointer text-[1.2rem] text-black py-1 px-3 ml-4"
+  >
+    <RiLogoutCircleLine fill='#6e68c4' size={27} className='mb-1 cursor-pointer' />
+    <dialog id="my_modal_1" className="modal modal-bottom sm:modal-middle">
+      <div className="modal-box flex flex-col justify-center items-center h-[25vh] ">
+        <h3 className="font-bold text-lg">هل انت متأكد من تسجيل الخروج؟</h3>
+        <div className="modal-action">
+          <form method="dialog" className='flex justify-center items-center gap-2 w-full '>
+            <button
+              type="button"
+              onClick={() => {
+                removeLocal();
+                document.getElementById('my_modal_1').close();
+              }}
+              className="rounded-lg bg-red-600 text-white hover:bg-red-500 w-[5vw] h-[6vh] max-sm:w-[12vw] max-sm:h-[4vh]"
+            >
+              نعم
+            </button>
+            <button className="rounded-lg  text-black border border-[#a3a3a3] hover:bg-[#f0f0f0] w-[5vw] h-[6vh] max-sm:w-[12vw] max-sm:h-[4vh] ">لا</button>
+
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </li>
+)}
+
   {/* <dialog id="my_modal_5" className="modal modal-bottom sm:modal-middle ">
       <div className="modal-box">
         <div className='flex flex-col justify-center items-center gap-4'>
