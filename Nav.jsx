@@ -147,6 +147,7 @@ const Nav = () => {
               type="button"
               onClick={() => {
                 removeLocal();
+                document.getElementById('my_modal_10').close();
               }}
               className="rounded-lg bg-red-600 text-white hover:bg-red-500 w-[5vw] h-[6vh] max-sm:w-[12vw] max-sm:h-[4vh]"
             >
