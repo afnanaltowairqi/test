@@ -134,11 +134,11 @@ const Nav = () => {
 
 {getLocal !== null && (
   <li
-    onClick={() => document.getElementById('my_modal_1').showModal()}
+    onClick={() => document.getElementById('my_modal_10').showModal()}
     className="rounded-lg flex items-center cursor-pointer text-[1.2rem] text-black py-1 px-3 ml-4"
   >
     <RiLogoutCircleLine fill='#6e68c4' size={27} className='mb-1 cursor-pointer' />
-    <dialog id="my_modal_1" className="modal modal-bottom sm:modal-middle">
+    <dialog id="my_modal_10" className="modal modal-bottom sm:modal-middle">
       <div className="modal-box flex flex-col justify-center items-center h-[25vh] ">
         <h3 className="font-bold text-lg">هل انت متأكد من تسجيل الخروج؟</h3>
         <div className="modal-action">
@@ -147,7 +147,6 @@ const Nav = () => {
               type="button"
               onClick={() => {
                 removeLocal();
-                document.getElementById('my_modal_1').close();
               }}
               className="rounded-lg bg-red-600 text-white hover:bg-red-500 w-[5vw] h-[6vh] max-sm:w-[12vw] max-sm:h-[4vh]"
             >
